@@ -7,3 +7,5 @@ Route::get('articles', [ArticleController::class, 'index'])
     ->name('api.v1.articles.index');
 Route::get('articles/{article}', [ArticleController::class, 'show'])
     ->name('api.v1.articles.show');
+Route::post('articles/create', [ArticleController::class, 'create'])
+    ->name('api.v1.articles.create');
